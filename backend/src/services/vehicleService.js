@@ -1,14 +1,14 @@
-import {listVehiclesRepo,createVehicleRepo,getVehicleByIdRepo,updateVehicleRepo,deleteVehicleRepo} from '../repositories/vehicleRepo.js';
+import {listVehicles,createVehicle,getVehicleById,updateVehicle,deleteVehicle} from '../repositories/vehicleRepo.js';
 import { buscarClientePorId } from '../repositories/clientRepo.js';
 
 class VehicleService {
     getVehicles() {
-        return listVehiclesRepo();
+        return listVehicles();
     }  
 
     getVehicleById(id) {
         const vehicleId = parseInt(id);
-        return getVehicleByIdRepo(vehicleId);
+        return getVehicleById(vehicleId);
     }
     
     addVehicle(vehicle) {
@@ -16,7 +16,7 @@ class VehicleService {
         if (!cliente) {
             throw new Error('Cliente nao encontrado');
         }
-        return createVehicleRepo(vehicle);
+        return createVehicle(vehicle);
     }
 
     updateVehicle(id, updatedVehicle) {
@@ -25,7 +25,7 @@ class VehicleService {
         if (!existingVehicle) {
             throw new Error('Veículo não encontrado');
         }
-        return updateVehicleRepo(vehicleId, updatedVehicle);
+        return updateVehicle(vehicleId, updatedVehicle);
     }
 
     deleteVehicle(id) {
@@ -34,7 +34,7 @@ class VehicleService {
         if (!existingVehicle) {
             throw new Error('Veículo não encontrado');
         }
-        return deleteVehicleRepo(vehicleId);
+        return deleteVehicle(vehicleId);
     }
     
 
