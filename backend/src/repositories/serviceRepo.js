@@ -32,4 +32,16 @@ export function updateService(id, updatedService) {
 
 
 }
+export function deleteService(id){
+    const index  = servMock.findIndex(service => service.id === id);
+    if(index !== -1){
+     const deleteServ = servMock.splice(index,1)
+
+     return deleteServ[0]
+    }
+
+    
+   
+}
+
   

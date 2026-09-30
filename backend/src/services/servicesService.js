@@ -1,5 +1,5 @@
 import e from 'express';
-import {listServices,addService,getServiceById,updateService} from '../repositories/serviceRepo.js';
+import {listServices,addService,getServiceById,updateService,deleteService} from '../repositories/serviceRepo.js';
 
 
 
@@ -37,6 +37,11 @@ updateService(id, updatedService) {
     return updateService(serviceId, updatedService);
     
 }
+
+delServService(id){
+    return deleteService(id)
+}
+
 
    
        
