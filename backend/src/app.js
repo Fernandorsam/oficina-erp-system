@@ -3,6 +3,7 @@ import clientRoutes from './routes/client.routes.js';
 import vehicleRoutes from './routes/vehicle.routes.js';
 import osRoutes from './routes/os.routes.js';
 import serviceRoutes from './routes/service.routes.js';
+import osService from './routes/osService.routes.js';
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use('/api/clients', clientRoutes);
 app.use('/api/vehicles', vehicleRoutes);
 app.use('/api/os', osRoutes);
 app.use('/api/services', serviceRoutes);
+app.use('/api/os-service',osService);
 
 
 export default app;

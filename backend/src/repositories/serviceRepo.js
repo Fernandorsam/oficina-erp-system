@@ -40,6 +40,8 @@ export function deleteService(id){
      return deleteServ[0]
     }
 
+    return null
+
     
    
 }

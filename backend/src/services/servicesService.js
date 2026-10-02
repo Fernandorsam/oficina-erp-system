@@ -1,4 +1,3 @@
-import e from 'express';
 import {listServices,addService,getServiceById,updateService,deleteService} from '../repositories/serviceRepo.js';
 
 

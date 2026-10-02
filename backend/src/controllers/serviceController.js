@@ -46,7 +46,7 @@ export function deleteService(req,res){
 
   if(servDeleted){
     res.status(200).json({message:"serviço deletado com sucesso!!!"})
-    return null;
+    
   }else{
     res.status(404).json({message:"serviço não encontrado :("})
   }
