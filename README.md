@@ -56,8 +56,7 @@ Requisitos e análise (README): Documento completo com perfis (Recepção, Mecâ
 ## Como executar localmente
 1 Clone o repositório:
 ```
-git clone [https://github.com/Fernandorsam/oficina-erp-system.git](https://github.com/Fernandorsam/oficina-erp-system.git)
-cd oficina-erp-system
+git clone https://github.com/Fernandorsam/oficina-erp-system.git
 ```
 2 Instale as dependências e rode o backend:
 ```
